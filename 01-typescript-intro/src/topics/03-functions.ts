@@ -18,10 +18,30 @@ function multiply(fristNumber:number, secondNumber?:number, base = 2): number {
     return fristNumber * base;
 }
 
-const result1: number = addNumbers(1,2);
-const result2: string = addNumbersArrow(1,2);
-const multiplyResult: number = multiply(5);
+// const result1: number = addNumbers(1,2);
+// const result2: string = addNumbersArrow(1,2);
+// const multiplyResult: number = multiply(5);
+// console.log({result1,result2,multiplyResult});
 
-console.log({result1,result2,multiplyResult});
+interface Character {
+    name: string;
+    hp: number;
+    showHp: ()=> void;
+}
+
+const healCharacter = (character: Character, amount: number) => {
+    character.hp += amount;
+}
+
+const Darius: Character = {
+    name: 'Darius',
+    hp: 50,
+    showHp() {
+        console.log(`Puntos de Vida ${this.hp}`);
+    },
+};
+
+healCharacter( Darius,10 );
+Darius.showHp();
 
 export{};
