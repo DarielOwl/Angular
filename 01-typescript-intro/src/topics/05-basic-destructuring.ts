@@ -31,8 +31,14 @@ const {
 
 const { author } = details;
 
-console.log('Song: ',anotherSong);
-console.log('Duration: ',duration);
-console.log('Author: ',author);
+// console.log('Song: ',anotherSong);
+// console.log('Duration: ',duration);
+// console.log('Author: ',author);
+
+const [goku, vegeta, trunks]: string[] = ['Goku','Vegeta','Trunks']
+
+const [, , trunks1 = 'Not Found']: string[] = ['Goku','Vegeta']
+
+console.log('Personaje: ', trunks1);
 
 export{};
