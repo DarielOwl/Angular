@@ -30,7 +30,18 @@ export class Person {
         private address:string = 'No Address'    
     ) {}
 }
-const ironman = new Person('IronMan');
+
+export class Hero extends Person {
+    constructor(
+        public alterEgo:string,
+        public age:number,
+        private realName:string    
+    ) {
+        super(realName,'Miami');
+    }
+}
+
+const ironman = new Hero('IronMan',45,'Tony');
 
 console.log(ironman);
 
