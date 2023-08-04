@@ -1,14 +1,36 @@
+
+//*NO definiendo los constructores
+// export class Person {
+//     public name: string;
+//     private address: string;
+
+//     constructor() {
+//         this.name = 'Fernando';
+//         this.address = 'New York';
+//     }
+// }
+//const ironman = new Person();
+
+//*Definiendo los constructores
+// export class Person {
+//     public name: string;
+//     private address: string;
+
+//     constructor(name:string, address:string) {
+//         this.name = name;
+//         this.address = address;
+//     }
+// }
+// const ironman = new Person('IronMan','New York');
+
+//Nueva forma que implementa angular
 export class Person {
-    public name: string;
-    private address: string;
-
-    constructor() {
-        this.name = 'Fernando';
-        this.address = 'New York';
-    }
+    constructor(
+        public name:string,
+        private address:string = 'No Address'    
+    ) {}
 }
-
-const ironman = new Person();
+const ironman = new Person('IronMan');
 
 console.log(ironman);
 
