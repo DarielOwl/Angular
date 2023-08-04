@@ -26,22 +26,35 @@
 //Nueva forma que implementa angular
 export class Person {
     constructor(
-        public name:string,
+        public firstName:string,
+        public lastName:string,
         private address:string = 'No Address'    
     ) {}
 }
 
-export class Hero extends Person {
+//*Implementar la clase Person como Herencia
+// export class Hero extends Person {
+//     constructor(
+//         public alterEgo:string,
+//         public age:number,
+//         private realName:string    
+//     ) {
+//         super(realName,'Miami');
+//     }
+// }
+
+//*Implementar la clase Person como Composicion
+export class Hero {
     constructor(
         public alterEgo:string,
         public age:number,
-        private realName:string    
-    ) {
-        super(realName,'Miami');
-    }
+        public realName:string,
+        public person:Person,    
+    ) {}
 }
 
-const ironman = new Hero('IronMan',45,'Tony');
+const tony = new Person('JhonnyBravo','Stark')
+const ironman = new Hero('IronMan',45,'Tony',tony);
 
 console.log(ironman);
 
