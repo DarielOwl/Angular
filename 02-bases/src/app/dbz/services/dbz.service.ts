@@ -32,6 +32,7 @@ export class DbzService {
     this.characters.push(newCharacter);
   }
 
+  //!Metodo Viejo
   // onDeleteCharacter(index:number):void {
   //   this.characters.splice(index,1);
   // }
