@@ -5,7 +5,11 @@
 
   <!--Mostrar Lista-->
   <div class="col">
-    <dbz-list [characterList]="characters"></dbz-list>
+    <dbz-list
+      [characterList]="characters"
+      (onDeleteCharacterID)="onDeleteCharacter($event)"
+    >
+    </dbz-list>
   </div>
 
   <!--Añadir Personaje-->
