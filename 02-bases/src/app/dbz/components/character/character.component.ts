@@ -24,7 +24,8 @@ export class CharacterComponent {
     console.log(this.character);
 
     if ( this.character.name.length === 0 ) return;
-    else if (this.character.power < 0 ) return;
+
+    if ( this.character.power < 0 ) return;
 
     this.onNewCharacter.emit(this.character);
 
