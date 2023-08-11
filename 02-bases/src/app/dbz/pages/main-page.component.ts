@@ -23,7 +23,13 @@ export class MainPageComponent {
 
   onNewCharacter(character: Character):void {
     console.log("Main Page: ",character);
+
+    //Inserta al final del array
+    this.characters.push(character);
   }
 
+  onDeleteCharacter(character:Character):void {
+
+  }
 
 }

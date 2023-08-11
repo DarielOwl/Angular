@@ -15,4 +15,13 @@ export class ListComponent {
       power: 10
     }
   ]
+
+  // onDeleteCharacterID()
+
+  onDeleteCharacter(index:number):void{
+    console.log(index);
+  }
+
+
+
 }
