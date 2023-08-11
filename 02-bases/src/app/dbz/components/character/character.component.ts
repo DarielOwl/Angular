@@ -13,7 +13,7 @@ export class CharacterComponent {
 
   public character: Character = {
     name: '',
-     power: 0
+    power: 0
   };
 
   emitCharacter():void {
