@@ -1,0 +1,3 @@
+https://www.npmjs.com/package/del-cli
+
+https://www.npmjs.com/package/copyfiles
